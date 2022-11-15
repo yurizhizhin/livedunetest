@@ -24,7 +24,7 @@ class DivergeTest extends TestCase
      *
      * @return void
      */
-    public function test_diff_price(): void
+    public function test_diffPrice(): void
     {
         $validator = new DivergeValidator(self::ACCEPTABLE_DEVIATION_PERCENTAGE);
 
@@ -39,7 +39,7 @@ class DivergeTest extends TestCase
      * @return void
      * @throws Throwable
      */
-    public function test_get_deviation(): void
+    public function test_getDeviation(): void
     {
         $validator = new DivergeValidator(self::ACCEPTABLE_DEVIATION_PERCENTAGE);
 
@@ -62,7 +62,7 @@ class DivergeTest extends TestCase
      * @return void
      * @throws Throwable
      */
-    public function test_validation_invalid(): void
+    public function test_validationInvalid(): void
     {
         $data = [
             'new' => 1,
@@ -93,7 +93,7 @@ class DivergeTest extends TestCase
      * @return void
      * @throws Throwable
      */
-    public function test_validation_valid(): void
+    public function test_validationValid(): void
     {
         $data = [
             'new' => 3,
